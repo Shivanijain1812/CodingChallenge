@@ -2,7 +2,7 @@ import random
 import math
 
 
-#TASK 0
+
 def displayMatrix(V):
 	for i in range(len(V)):
 		for j in range(len(V[0])):
@@ -14,7 +14,7 @@ displayMatrix([[1,2],[5,6],[7,8]])
 print()
 
 
-#TASK 00
+
 def getColumns(M):
 	Columns = [ [ 0 for i in range(len(M)) ] for j in range(len(M[0])) ]
 	for i in range(len(M)):
@@ -24,8 +24,6 @@ def getColumns(M):
 getColumns([[1,2],[9,7],[7,2]])
 print()
 
-
-#TASK 1
 def createVectorMatrix(M):
 	for i in range(len(M)):
 		for j in range(len(M[0])):
@@ -35,7 +33,7 @@ createVectorMatrix([[1,2,3],[4,5,6],[7,8,9]])
 print()
 
 
-#Task 2
+
 def createMatrixRandom(rows,cols,min,max):
 	Matrix = []
 	for i in range(rows):
@@ -52,7 +50,7 @@ createMatrixRandom(3,3,1,9)
 print()
 
 
-#TASK 3
+
 def addMatrices(M1,M2):
 # for rows
 	for i in range(len(M1)):
@@ -68,7 +66,7 @@ addMatrices([[1,2,3],[4,5,6],[7,8,9]],[[5,3,3],[3,5,5],[2,2,5]])
 print()
 
 
-#TASK 4
+
 def subtractMatrices(M1,M2):
 # for rows
 	for i in range(len(M1)):
@@ -84,7 +82,7 @@ subtractMatrices([[1,2,3],[4,5,6],[7,8,9]],[[5,3,3],[3,5,5],[2,2,5]])
 print()
 
 
-#TASK 5
+
 def multiplyByScalar(M,S):
 	Matrix = []
 	for i in range(len(M)):
@@ -101,7 +99,6 @@ multiplyByScalar([[1,2,3],[4,5,6],[7,8,9]],2)
 print()
 
 
-#TASK 6
 def multiplyMatrices(M1,M2):
 # for rows
 	for i in range(len(M1)):
@@ -117,7 +114,6 @@ multiplyMatrices([[1,2,3],[4,5,6],[7,8,9]],[[1,2,3],[4,5,6],[7,8,9]])
 print()
 
 
-#TASK 7
 def powerMatrices(M,S):
 	Matrix = []
 	for i in range(len(M)):
@@ -134,7 +130,7 @@ powerMatrices([[1,2,3],[4,5,6],[7,8,9]],3)
 print()
 
 
-#TASK 8
+
 def mainDiagonal(M):
 	diagonal = []
 	for i in range(len(M)):
@@ -146,7 +142,6 @@ print(mainDiagonal([[1,2,3],[4,5,6],[7,8,9]]))
 print()
 
 
-#TASK 9
 def trace(M):
 	trace_M = 0
 	diagonal = mainDiagonal(M)
@@ -157,7 +152,7 @@ print(trace([[1,2,3],[4,5,6],[7,8,9]]))
 print()
 
 
-#TASK 10
+
 def transposeMatrix(M):
 	transpose = [ [ 0 for i in range(len(M)) ] for j in range(len(M[0])) ]
 	for i in range(len(M)):
@@ -171,7 +166,7 @@ transposeMatrix([[1,2,3],[4,5,6],[7,8,9]])
 print()
 
 
-#TASK 11
+
 def isEqual(M1,M2):
 	for i in range(len(M1)):
 		for j in range(len(M1[0])):
@@ -183,7 +178,7 @@ print(isEqual([[1,2,3],[4,5,6],[7,8,9]],[[1,2,3],[7,6,6],[7,8,9]]))
 print()
 
 
-#TASK 12
+
 def isSymmetric(M):
 	transpose = [ [ 0 for i in range(len(M)) ] for j in range(len(M[0])) ]
 	for i in range(len(M)):
